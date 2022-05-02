@@ -12,9 +12,17 @@ namespace eAgenda.WinApp
 {
     public partial class MenuAgenda : Form
     {
+        private readonly PainelTarefas painelTarefas;
         public MenuAgenda()
         {
             InitializeComponent();
+            painelTarefas = new PainelTarefas();
+        }
+
+        private void bt_menuTarefas_Click(object sender, EventArgs e)
+        {
+            PainelPrincipal.Controls.Clear();
+            PainelPrincipal.Controls.Add(painelTarefas);
         }
     }
 }
