@@ -16,7 +16,7 @@ namespace GestaoTarefas.WinApp
             this.tarefa = tarefa;
             lb_tituloTarefa.Text = tarefa.Titulo;
 
-            foreach (var item in tarefa.Items)
+            foreach (ItemTarefa item in tarefa.Items)
             {
                 listItemsTarefas.Items.Add(item);
             }
