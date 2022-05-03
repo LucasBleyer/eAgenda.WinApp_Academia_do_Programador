@@ -102,7 +102,11 @@
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_inserir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ListagemContatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListagemContatos";
             this.ResumeLayout(false);
 

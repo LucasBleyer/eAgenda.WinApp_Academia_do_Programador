@@ -2,7 +2,6 @@
 using GestaoTarefas.Dominio;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using eAgenda.WinApp;
 using GestaoTarefas.Infra;
 
 namespace GestaoTarefas.WinApp
@@ -13,7 +12,7 @@ namespace GestaoTarefas.WinApp
 
         public ListagemTarefas()
         {
-            repositorioTarefa = new RepositorioTarefa();//pro repositiorioTarefa não ficar null
+            repositorioTarefa = new RepositorioTarefa();//pro repositiorio Tarefa não ficar null
             InitializeComponent();
             CarregarTarefas();
         }

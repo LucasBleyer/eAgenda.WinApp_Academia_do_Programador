@@ -22,7 +22,6 @@ namespace GestaoTarefas.WinApp
             set
             {
                 tarefa = value;
-                txtNumero.Text = tarefa.Numero.ToString();
                 txtTitulo.Text = tarefa.Titulo;
             }
         }
