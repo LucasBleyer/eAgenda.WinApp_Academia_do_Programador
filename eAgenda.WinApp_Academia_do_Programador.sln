@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eAgenda.WinForms", "eAgenda.WinApp\eAgenda.WinForms.csproj", "{CFC06601-9C1D-4979-917E-C3E15C1855FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eAgenda.WinApp", "eAgenda.WinApp\eAgenda.WinApp.csproj", "{CFC06601-9C1D-4979-917E-C3E15C1855FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Apresentacao", "1-Apresentacao", "{88C7F39B-4914-4C66-8C07-2EDAD5C90684}"
 EndProject

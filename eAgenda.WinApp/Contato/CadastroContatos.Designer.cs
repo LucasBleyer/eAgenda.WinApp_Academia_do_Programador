@@ -1,4 +1,4 @@
-﻿namespace eAgenda.WinApp.Contato
+﻿namespace eAgenda.WinApp
 {
     partial class CadastroContatos
     {
