@@ -48,7 +48,7 @@
             // bt_menuTarefas
             // 
             this.bt_menuTarefas.Font = new System.Drawing.Font("Unispace", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_menuTarefas.Location = new System.Drawing.Point(27, 81);
+            this.bt_menuTarefas.Location = new System.Drawing.Point(27, 97);
             this.bt_menuTarefas.Name = "bt_menuTarefas";
             this.bt_menuTarefas.Size = new System.Drawing.Size(133, 69);
             this.bt_menuTarefas.TabIndex = 1;
@@ -59,7 +59,7 @@
             // bt_menuContatos
             // 
             this.bt_menuContatos.Font = new System.Drawing.Font("Unispace", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_menuContatos.Location = new System.Drawing.Point(27, 156);
+            this.bt_menuContatos.Location = new System.Drawing.Point(27, 194);
             this.bt_menuContatos.Name = "bt_menuContatos";
             this.bt_menuContatos.Size = new System.Drawing.Size(133, 69);
             this.bt_menuContatos.TabIndex = 2;
@@ -69,7 +69,7 @@
             // bt_menuCompromissos
             // 
             this.bt_menuCompromissos.Font = new System.Drawing.Font("Unispace", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_menuCompromissos.Location = new System.Drawing.Point(27, 231);
+            this.bt_menuCompromissos.Location = new System.Drawing.Point(27, 290);
             this.bt_menuCompromissos.Name = "bt_menuCompromissos";
             this.bt_menuCompromissos.Size = new System.Drawing.Size(133, 69);
             this.bt_menuCompromissos.TabIndex = 3;

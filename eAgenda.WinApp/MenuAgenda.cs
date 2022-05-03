@@ -12,11 +12,11 @@ namespace eAgenda.WinApp
 {
     public partial class MenuAgenda : Form
     {
-        private readonly PainelTarefas painelTarefas;
+        private readonly PainelTarefa painelTarefas;
         public MenuAgenda()
         {
             InitializeComponent();
-            painelTarefas = new PainelTarefas();
+            painelTarefas = new PainelTarefa();
         }
 
         private void bt_menuTarefas_Click(object sender, EventArgs e)
