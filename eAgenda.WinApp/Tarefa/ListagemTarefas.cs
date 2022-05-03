@@ -117,7 +117,26 @@ namespace GestaoTarefas.WinApp
 
         private void bt_atualizar_Click(object sender, EventArgs e)
         {
+            Tarefa tarefaSelecionada = (Tarefa)listTarefas.SelectedItem;//selecionar a tarefa na lista
 
+            if (tarefaSelecionada == null)
+            {
+                MessageBox.Show("Não existe nenhuma tarefa selecionada!",
+                "Cadastro de Items", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else
+            {
+                AtualizaItemsTarefa tela = new AtualizaItemsTarefa(tarefaSelecionada);
+
+                if (tela.ShowDialog() == DialogResult.OK)
+                {
+                    List<ItemTarefa> items = tela.ItemsConcluidos;//propriedade do cadastro items tarefa
+
+                    repositorioTarefa.AtualizarItems(tarefaSelecionada, items);
+                }
+                CarregarTarefas();
+            }
         }
     }
 }
