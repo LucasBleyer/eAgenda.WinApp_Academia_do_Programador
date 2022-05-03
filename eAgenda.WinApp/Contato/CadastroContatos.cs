@@ -1,18 +1,16 @@
-﻿using System;
+﻿using GestaoContatos.Dominio;
+using System;
 using System.Windows.Forms;
-using GestaoContatos.Dominio;
 
 namespace eAgenda.WinApp
 {
     public partial class CadastroContatos : Form
     {
         private Contato contato;
-
         public CadastroContatos()
         {
             InitializeComponent();
         }
-
         public Contato Contato
         {
             get
@@ -37,6 +35,11 @@ namespace eAgenda.WinApp
             contato.Telefone = txtTelefone.Text;
             contato.Empresa = txtEmpresa.Text;
             contato.Cargo = txtCargo.Text;
+        }
+
+        private void bt_gravarClick(object sender, EventArgs e)
+        {
+
         }
     }
 }

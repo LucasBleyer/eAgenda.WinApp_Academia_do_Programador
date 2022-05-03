@@ -1,8 +1,8 @@
 ﻿using System;
 using GestaoTarefas.Dominio;
+using GestaoTarefas.Infra;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using GestaoTarefas.Infra;
 
 namespace GestaoTarefas.WinApp
 {

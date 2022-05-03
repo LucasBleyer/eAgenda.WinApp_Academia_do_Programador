@@ -1,4 +1,4 @@
-﻿namespace eAgenda.WinApp.Contato
+﻿namespace eAgenda.WinApp
 {
     partial class ListagemContatos
     {
@@ -72,6 +72,7 @@
             this.bt_excluir.TabIndex = 9;
             this.bt_excluir.Text = "Excluir";
             this.bt_excluir.UseVisualStyleBackColor = true;
+            this.bt_excluir.Click += new System.EventHandler(this.bt_excluir_Click);
             // 
             // bt_editar
             // 
@@ -81,6 +82,7 @@
             this.bt_editar.TabIndex = 8;
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseVisualStyleBackColor = true;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // bt_inserir
             // 
@@ -90,6 +92,7 @@
             this.bt_inserir.TabIndex = 7;
             this.bt_inserir.Text = "Inserir";
             this.bt_inserir.UseVisualStyleBackColor = true;
+            this.bt_inserir.Click += new System.EventHandler(this.bt_inserir_Click);
             // 
             // ListagemContatos
             // 

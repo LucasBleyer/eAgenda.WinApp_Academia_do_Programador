@@ -1,4 +1,4 @@
-﻿namespace eAgenda.WinApp.Contato
+﻿namespace eAgenda.WinApp
 {
     partial class CadastroContatos
     {
@@ -62,6 +62,7 @@
             this.bt_gravar.TabIndex = 11;
             this.bt_gravar.Text = "Gravar";
             this.bt_gravar.UseVisualStyleBackColor = true;
+            this.bt_gravar.Click += new System.EventHandler(this.bt_gravar_Click);
             // 
             // txtNome
             // 
@@ -172,7 +173,10 @@
             this.Controls.Add(this.bt_gravar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "CadastroContatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestão de Contatos";
             this.ResumeLayout(false);
             this.PerformLayout();
