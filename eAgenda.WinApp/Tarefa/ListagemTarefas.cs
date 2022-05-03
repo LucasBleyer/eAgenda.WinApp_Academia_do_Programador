@@ -112,7 +112,6 @@ namespace GestaoTarefas.WinApp
                     repositorioTarefa.AdicionarItens(tarefaSelecionada, items);
 
                     CarregarTarefas();
-                    tarefaSelecionada.ToString();
                 }
             }         
         }
@@ -138,7 +137,6 @@ namespace GestaoTarefas.WinApp
                     repositorioTarefa.AtualizarItems(tarefaSelecionada, items);
                 }
                 CarregarTarefas();
-                tarefaSelecionada.ToString();
             }
         }
     }
