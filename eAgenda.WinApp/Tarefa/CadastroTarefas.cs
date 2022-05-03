@@ -29,8 +29,6 @@ namespace GestaoTarefas.WinApp
 
         private void bt_gravar_Click(object sender, EventArgs e)
         {
-            tarefa = new Tarefa();
-
             tarefa.Titulo = txtTitulo.Text;
         }
     }
