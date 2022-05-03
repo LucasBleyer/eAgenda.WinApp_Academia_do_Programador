@@ -21,7 +21,7 @@ namespace GestaoContatos.Infra
 
         public void Editar(Contato contato)
         {
-            foreach (var c in contatos)
+            foreach (Contato c in contatos)
             {
                 if (c.Numero == contato.Numero)
                 {
@@ -34,9 +34,9 @@ namespace GestaoContatos.Infra
                 }
             }
         }
-        public void Excluir(Contato contato)
+        public void Excluir(Contato tarefa)
         {
-            contatos.Remove(contato);
+            contatos.Remove(tarefa);
         }
     }
 }
