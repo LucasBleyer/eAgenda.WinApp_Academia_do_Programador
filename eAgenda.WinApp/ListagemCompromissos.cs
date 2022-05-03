@@ -29,17 +29,66 @@ namespace eAgenda.WinApp
 
         private void bt_inserir_Click(object sender, EventArgs e)
         {
+            CadastroCompromissos tela = new CadastroCompromissos();
+            tela.Compromisso = new Compromisso();
 
+            DialogResult resultado = tela.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
+                repositorioCompromisso.Inserir(tela.Compromisso);
+                CarregarCompromissos();
+            }
         }
 
         private void bt_editar_Click(object sender, EventArgs e)
         {
+            Compromisso compromissoSelecionado = (Compromisso)listCompromissos.SelectedItem;//selecionar a tarefa na lista
 
+            if (compromissoSelecionado == null)
+            {
+                MessageBox.Show("Selecione um compromisso primeiro",
+                "Edição de Compromisso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else
+            {
+                CadastroCompromissos tela = new CadastroCompromissos();
+                tela.Compromisso = compromissoSelecionado;
+
+                DialogResult resultado = tela.ShowDialog();
+
+                if (resultado == DialogResult.OK)
+                {
+                    repositorioCompromisso.Editar(tela.Compromisso);
+                    CarregarCompromissos();
+                }
+            }
         }
 
         private void bt_excluir_Click(object sender, EventArgs e)
         {
+            Compromisso compromissoSelecionado = (Compromisso)listCompromissos.SelectedItem;//selecionar a tarefa na lista
 
+            if (compromissoSelecionado == null)
+            {
+                MessageBox.Show("Selecione um compromisso primeiro",
+                "Edição de Compromisso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            else
+            {
+                CadastroCompromissos tela = new CadastroCompromissos();
+                tela.Compromisso = compromissoSelecionado;
+
+                DialogResult resultado = tela.ShowDialog();
+
+                if (resultado == DialogResult.OK)
+                {
+                    repositorioCompromisso.Excluir(tela.Compromisso);
+                    CarregarCompromissos();
+                }
+            }
         }
     }
 }

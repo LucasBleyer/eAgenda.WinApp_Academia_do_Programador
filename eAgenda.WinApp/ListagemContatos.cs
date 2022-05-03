@@ -14,10 +14,10 @@ namespace eAgenda.WinApp
         {
             repositorioContato = new RepositorioContato();//pro repositiorio Tarefa não ficar null
             InitializeComponent();
-            CarregarTarefas();
+            CarregarContatos();
         }
 
-        private void CarregarTarefas()
+        private void CarregarContatos()
         {
             List<Contato> contatos = repositorioContato.SelecionarTodos();
 
@@ -39,7 +39,7 @@ namespace eAgenda.WinApp
             if (resultado == DialogResult.OK)
             {
                 repositorioContato.Inserir(tela.Contato);
-                CarregarTarefas();
+                CarregarContatos();
             }
         }
 
@@ -63,7 +63,7 @@ namespace eAgenda.WinApp
                 if (resultado == DialogResult.OK)
                 {
                     repositorioContato.Editar(tela.Contato);
-                    CarregarTarefas();
+                    CarregarContatos();
                 }
             }
         }
@@ -85,7 +85,7 @@ namespace eAgenda.WinApp
                 if (resultado == DialogResult.OK)
                 {
                     repositorioContato.Excluir(contatoSelecionado);
-                    CarregarTarefas();
+                    CarregarContatos();
                 }
             }
         }

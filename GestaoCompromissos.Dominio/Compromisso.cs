@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace GestaoCompromissos.Dominio
 {
     public class Compromisso
@@ -8,10 +10,11 @@ namespace GestaoCompromissos.Dominio
 
         }
 
-        public Compromisso(string assunto, string local, string horaInicio, string horaTermino)
+        public Compromisso(string assunto, string local, DateTime data, string horaInicio, string horaTermino)
         {
             Assunto = assunto;
             Local = local;
+            Data = data;
             HoraInicio = horaInicio;
             HoraTermino = horaTermino;
         }
@@ -19,6 +22,7 @@ namespace GestaoCompromissos.Dominio
         public int Numero { get; set; }
         public string Assunto { get; set; }
         public string Local { get; set; }
+        public DateTime Data { get; set; }
         public string HoraInicio { get; set; }
         public string HoraTermino { get; set; }
 
@@ -26,6 +30,7 @@ namespace GestaoCompromissos.Dominio
         {
             return $"Assunto: {Assunto} , " +
                    $"Local: {Local} , " +
+                   $"Data: {Data.ToShortDateString()} , " +
                    $"HoraInicio: {HoraInicio} , " +
                    $"HoraTermino: {HoraTermino}";
         }

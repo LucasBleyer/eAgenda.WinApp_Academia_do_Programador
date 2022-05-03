@@ -105,7 +105,11 @@
             this.Controls.Add(this.bt_excluir);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_inserir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ListagemCompromissos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestão de Compromissos";
             this.ResumeLayout(false);
 

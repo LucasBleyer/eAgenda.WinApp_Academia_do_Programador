@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using eAgenda.WinApp.Compromisso;
 using GestaoTarefas.WinApp;
 
 namespace eAgenda.WinApp
