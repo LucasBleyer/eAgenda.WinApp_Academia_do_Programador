@@ -2,6 +2,7 @@
 using GestaoTarefas.Dominio;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using eAgenda.WinApp;
 
 namespace GestaoTarefas.WinApp
 {
@@ -136,8 +137,6 @@ namespace GestaoTarefas.WinApp
 
                 CarregarTarefas();
             }
-                   
-
         }
     }
 }

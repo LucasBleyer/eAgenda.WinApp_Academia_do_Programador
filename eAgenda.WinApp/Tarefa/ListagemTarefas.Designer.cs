@@ -34,6 +34,7 @@
             this.bt_cadastrar = new System.Windows.Forms.Button();
             this.bt_atualizar = new System.Windows.Forms.Button();
             this.listTarefas = new System.Windows.Forms.ListBox();
+            this.bt_voltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt_inserir
@@ -92,14 +93,25 @@
             this.listTarefas.ItemHeight = 15;
             this.listTarefas.Location = new System.Drawing.Point(12, 83);
             this.listTarefas.Name = "listTarefas";
-            this.listTarefas.Size = new System.Drawing.Size(612, 319);
+            this.listTarefas.Size = new System.Drawing.Size(612, 259);
             this.listTarefas.TabIndex = 5;
+            // 
+            // bt_voltar
+            // 
+            this.bt_voltar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.bt_voltar.Location = new System.Drawing.Point(273, 348);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(75, 40);
+            this.bt_voltar.TabIndex = 6;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = true;
             // 
             // ListagemTarefas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 419);
+            this.ClientSize = new System.Drawing.Size(636, 396);
+            this.Controls.Add(this.bt_voltar);
             this.Controls.Add(this.listTarefas);
             this.Controls.Add(this.bt_atualizar);
             this.Controls.Add(this.bt_cadastrar);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.Button bt_cadastrar;
         private System.Windows.Forms.Button bt_atualizar;
         private System.Windows.Forms.ListBox listTarefas;
+        private System.Windows.Forms.Button bt_voltar;
     }
 }
