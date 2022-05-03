@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GestaoCompromissos.Infra\GestaoCompromissos.Infra.csproj" />
     <ProjectReference Include="..\GestaoContatos.Infra\GestaoContatos.Infra.csproj" />
     <ProjectReference Include="..\GestaoTarefas.Dominio\GestaoTarefas.Dominio.csproj" />
     <ProjectReference Include="..\GestaoTarefas.Infra\GestaoTarefas.Infra.csproj" />
