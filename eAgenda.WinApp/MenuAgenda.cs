@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using eAgenda.WinApp.Compromisso;
 using GestaoTarefas.WinApp;
 
 namespace eAgenda.WinApp
@@ -15,11 +16,11 @@ namespace eAgenda.WinApp
         {
             ListagemTarefas tela = new ListagemTarefas();
 
-            DialogResult resultado = tela.ShowDialog();
+            DialogResult mostrarTela = tela.ShowDialog();
 
-            if (resultado == DialogResult.OK)
+            if (mostrarTela == DialogResult.OK)
             {
-                tela.DialogResult = resultado;
+                tela.DialogResult = mostrarTela;
             }
         }
 
@@ -27,11 +28,23 @@ namespace eAgenda.WinApp
         {
             ListagemContatos tela = new ListagemContatos();
 
-            DialogResult resultado = tela.ShowDialog();
+            DialogResult mostrarTela = tela.ShowDialog();
 
-            if (resultado == DialogResult.OK)
+            if (mostrarTela == DialogResult.OK)
             {
-                tela.DialogResult = resultado;
+                tela.DialogResult = mostrarTela;
+            }
+        }
+
+        private void bt_menuCompromissos_Click(object sender, EventArgs e)
+        {
+            ListagemCompromissos tela = new ListagemCompromissos();
+
+            DialogResult mostrarTela = tela.ShowDialog();
+
+            if (mostrarTela == DialogResult.OK)
+            {
+                tela.DialogResult = mostrarTela;
             }
         }
     }

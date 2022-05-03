@@ -44,7 +44,7 @@
             // bt_menuTarefas
             // 
             this.bt_menuTarefas.Font = new System.Drawing.Font("Unispace", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_menuTarefas.Location = new System.Drawing.Point(152, 84);
+            this.bt_menuTarefas.Location = new System.Drawing.Point(176, 83);
             this.bt_menuTarefas.Name = "bt_menuTarefas";
             this.bt_menuTarefas.Size = new System.Drawing.Size(349, 101);
             this.bt_menuTarefas.TabIndex = 1;
@@ -55,7 +55,7 @@
             // bt_menuContatos
             // 
             this.bt_menuContatos.Font = new System.Drawing.Font("Unispace", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_menuContatos.Location = new System.Drawing.Point(152, 207);
+            this.bt_menuContatos.Location = new System.Drawing.Point(176, 206);
             this.bt_menuContatos.Name = "bt_menuContatos";
             this.bt_menuContatos.Size = new System.Drawing.Size(349, 100);
             this.bt_menuContatos.TabIndex = 2;
@@ -66,18 +66,19 @@
             // bt_menuCompromissos
             // 
             this.bt_menuCompromissos.Font = new System.Drawing.Font("Unispace", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_menuCompromissos.Location = new System.Drawing.Point(152, 325);
+            this.bt_menuCompromissos.Location = new System.Drawing.Point(176, 324);
             this.bt_menuCompromissos.Name = "bt_menuCompromissos";
             this.bt_menuCompromissos.Size = new System.Drawing.Size(349, 100);
             this.bt_menuCompromissos.TabIndex = 3;
             this.bt_menuCompromissos.Text = "Gestão de Compromissos";
             this.bt_menuCompromissos.UseVisualStyleBackColor = true;
+            this.bt_menuCompromissos.Click += new System.EventHandler(this.bt_menuCompromissos_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Unispace", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(238, 29);
+            this.label1.Location = new System.Drawing.Point(262, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 33);
             this.label1.TabIndex = 4;
@@ -86,7 +87,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 95);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(84, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -96,7 +97,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(50, 220);
+            this.pictureBox2.Location = new System.Drawing.Point(74, 219);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 72);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -106,7 +107,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(50, 335);
+            this.pictureBox3.Location = new System.Drawing.Point(74, 334);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(84, 79);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -117,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 446);
+            this.ClientSize = new System.Drawing.Size(642, 465);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
