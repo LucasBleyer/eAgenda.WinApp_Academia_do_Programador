@@ -14,5 +14,12 @@ namespace GestaoTarefas.Dominio
         {
             Concluido = true;
         }
+
+        public void MarcarPendente()
+        {
+            Concluido = false;
+        }
+
+
     }
 }

@@ -39,5 +39,13 @@ namespace GestaoTarefas.WinApp
                 return listItemsTarefa.CheckedItems.Cast<ItemTarefa>().ToList();
             }
         }
+
+        public List<ItemTarefa> ItensPendentes
+        {
+            get
+            {
+                return listItemsTarefa.Items.Cast<ItemTarefa>().Except(ItemsConcluidos).ToList();
+            }
+        }
     }
 }

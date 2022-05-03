@@ -68,6 +68,13 @@ namespace GestaoTarefas.Dominio
             }
         }
 
+        public void MarcarPendente(ItemTarefa item)
+        {
+            ItemTarefa itemTarefa = items.Find(x => x.Equals(item));
+
+            itemTarefa?.MarcarPendente();
+        }
+
         public decimal calcularPercentualConcluido()
         {
             if (items.Count == 0)

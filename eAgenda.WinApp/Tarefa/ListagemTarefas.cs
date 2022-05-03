@@ -3,12 +3,13 @@ using GestaoTarefas.Dominio;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using eAgenda.WinApp;
+using GestaoTarefas.Infra;
 
 namespace GestaoTarefas.WinApp
 {
     public partial class ListagemTarefas : Form
     {
-        private RepositorioTarefa repositorioTarefa;
+        private readonly RepositorioTarefa repositorioTarefa;
 
         public ListagemTarefas()
         {
@@ -22,9 +23,10 @@ namespace GestaoTarefas.WinApp
             List<Tarefa> tarefas = repositorioTarefa.SelecionarTodos();
 
             listTarefas.Items.Clear();
-            foreach (Tarefa tarefa in tarefas)
+
+            foreach (Tarefa t in tarefas)
             {
-                listTarefas.Items.Add(tarefa);
+                listTarefas.Items.Add(t);
             } 
         }
 
@@ -110,6 +112,7 @@ namespace GestaoTarefas.WinApp
                     repositorioTarefa.AdicionarItens(tarefaSelecionada, items);
 
                     CarregarTarefas();
+                    tarefaSelecionada.ToString();
                 }
             }         
         }
@@ -134,8 +137,8 @@ namespace GestaoTarefas.WinApp
 
                     repositorioTarefa.AtualizarItems(tarefaSelecionada, items);
                 }
-
                 CarregarTarefas();
+                tarefaSelecionada.ToString();
             }
         }
     }
