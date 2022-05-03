@@ -1,4 +1,5 @@
 ﻿using System;
+using GestaoTarefas.Dominio;
 using System.Collections.Generic;
 using System.Windows.Forms;
 

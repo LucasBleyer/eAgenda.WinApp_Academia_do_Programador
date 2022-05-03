@@ -1,4 +1,5 @@
 ﻿using System;
+using GestaoTarefas.Dominio;
 using System.Windows.Forms;
 
 namespace GestaoTarefas.WinApp

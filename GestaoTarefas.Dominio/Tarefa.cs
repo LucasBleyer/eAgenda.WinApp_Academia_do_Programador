@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace GestaoTarefas.Dominio
 {
-    partial class Tarefa
+    public class Tarefa
     {
         private List<ItemTarefa> items = new List<ItemTarefa>();
         public Tarefa(int numero, string titulo) : this()
