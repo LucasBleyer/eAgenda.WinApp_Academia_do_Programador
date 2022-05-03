@@ -61,6 +61,7 @@
             this.bt_menuContatos.TabIndex = 2;
             this.bt_menuContatos.Text = "Gestão de Contatos";
             this.bt_menuContatos.UseVisualStyleBackColor = true;
+            this.bt_menuContatos.Click += new System.EventHandler(this.bt_menuContatos_Click);
             // 
             // bt_menuCompromissos
             // 

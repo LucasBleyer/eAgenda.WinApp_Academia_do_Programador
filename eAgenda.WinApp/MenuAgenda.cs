@@ -22,5 +22,17 @@ namespace eAgenda.WinApp
                 tela.DialogResult = resultado;
             }
         }
+
+        private void bt_menuContatos_Click(object sender, EventArgs e)
+        {
+            ListagemContatos tela = new ListagemContatos();
+
+            DialogResult resultado = tela.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
+                tela.DialogResult = resultado;
+            }
+        }
     }
 }

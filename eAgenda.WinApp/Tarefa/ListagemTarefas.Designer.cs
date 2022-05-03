@@ -39,7 +39,7 @@
             // 
             // bt_inserir
             // 
-            this.bt_inserir.Location = new System.Drawing.Point(67, 23);
+            this.bt_inserir.Location = new System.Drawing.Point(13, 23);
             this.bt_inserir.Name = "bt_inserir";
             this.bt_inserir.Size = new System.Drawing.Size(75, 40);
             this.bt_inserir.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // bt_editar
             // 
-            this.bt_editar.Location = new System.Drawing.Point(161, 23);
+            this.bt_editar.Location = new System.Drawing.Point(107, 23);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(75, 40);
             this.bt_editar.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // bt_excluir
             // 
-            this.bt_excluir.Location = new System.Drawing.Point(257, 23);
+            this.bt_excluir.Location = new System.Drawing.Point(203, 23);
             this.bt_excluir.Name = "bt_excluir";
             this.bt_excluir.Size = new System.Drawing.Size(75, 40);
             this.bt_excluir.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             // bt_cadastrar
             // 
-            this.bt_cadastrar.Location = new System.Drawing.Point(353, 23);
+            this.bt_cadastrar.Location = new System.Drawing.Point(408, 23);
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(99, 40);
             this.bt_cadastrar.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // bt_atualizar
             // 
-            this.bt_atualizar.Location = new System.Drawing.Point(474, 23);
+            this.bt_atualizar.Location = new System.Drawing.Point(529, 23);
             this.bt_atualizar.Name = "bt_atualizar";
             this.bt_atualizar.Size = new System.Drawing.Size(95, 40);
             this.bt_atualizar.TabIndex = 4;
