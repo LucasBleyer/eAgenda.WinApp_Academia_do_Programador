@@ -35,4 +35,3 @@ namespace GestaoCompromissos.Dominio
                    $"HoraTermino: {HoraTermino}";
         }
     }
-}

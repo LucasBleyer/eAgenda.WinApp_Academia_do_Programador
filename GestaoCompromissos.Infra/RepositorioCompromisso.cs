@@ -1,7 +1,6 @@
 ﻿using GestaoCompromissos.Dominio;
 using System.Collections.Generic;
 
-
 namespace GestaoCompromissos.Infra
 {
     public class RepositorioCompromisso
