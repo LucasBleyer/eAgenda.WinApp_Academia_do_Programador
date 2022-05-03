@@ -8,6 +8,7 @@ namespace GestaoTarefas.Dominio
     public class Tarefa
     {
         private List<ItemTarefa> items = new List<ItemTarefa>();
+
         public Tarefa(int numero, string titulo) : this()
         {
             Numero = numero;
@@ -41,7 +42,7 @@ namespace GestaoTarefas.Dominio
             {
                 return $"Número: {Numero} , " +
                 $"Título: {Titulo} , " +
-                $"Data de Criação: {DataCriacao.ToShortDateString()}," +
+                $"Data de Criação: {DataCriacao.ToShortDateString()} ," +
                 $"Percentual: {percentual}%";
             }
         }
