@@ -21,6 +21,7 @@ namespace GestaoCompromissos.Dominio
             HoraTermino = horaTermino;
         }
 
+        public int Numero { get; set; }
         public string Assunto { get; set; }
         public string Local { get; set; }
         public string HoraInicio { get; set; }
